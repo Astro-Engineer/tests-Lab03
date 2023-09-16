@@ -27,7 +27,9 @@
 #define SDL_assert_release(condition) REQUIRE(condition)
 
 // Skip over SDL logs completely
-static void SDL_Log(...) {}
+static void SDL_Log(...)
+{
+}
 
 #include "CollisionComponent.cpp"
 
